@@ -1,4 +1,7 @@
 let list: number[] = []
+function doSomething (list: any[]) {
+    return 0
+}
 basic.forever(function () {
     if (pins.analogReadPin(AnalogPin.P0) == 1) {
         list = [
@@ -12,7 +15,12 @@ basic.forever(function () {
         pins.digitalReadPin(DigitalPin.P8),
         pins.digitalReadPin(DigitalPin.P9),
         pins.digitalReadPin(DigitalPin.P10),
-        pins.digitalReadPin(DigitalPin.P0)
+        pins.digitalReadPin(DigitalPin.P11),
+        pins.digitalReadPin(DigitalPin.P12),
+        pins.digitalReadPin(DigitalPin.P13),
+        pins.digitalReadPin(DigitalPin.P14),
+        pins.digitalReadPin(DigitalPin.P15),
+        pins.digitalReadPin(DigitalPin.P16)
         ]
     }
 })
