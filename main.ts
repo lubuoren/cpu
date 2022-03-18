@@ -1,7 +1,5 @@
 let list: number[] = []
-function doSomething (list: any[]) {
-    return 0
-}
+let _1st_com = 0
 basic.forever(function () {
     if (pins.analogReadPin(AnalogPin.P0) == 1) {
         list = [
@@ -22,5 +20,6 @@ basic.forever(function () {
         pins.digitalReadPin(DigitalPin.P15),
         pins.digitalReadPin(DigitalPin.P16)
         ]
+        _1st_com = list.removeAt(15) * 1 + list.removeAt(14) * 2 + list.removeAt(13) * 4 + list.removeAt(12) * 8 + list.removeAt(11) * 16 + list.removeAt(10) * 32 + list.removeAt(9) * 64 + list.removeAt(8) * 128 + list.removeAt(7) * 256 + list.removeAt(6) * 512 + list.removeAt(5) * 1024 + list.removeAt(4) * 2048 + list.removeAt(3) * 4096 + list.removeAt(2) * 8192 + list.removeAt(1) * 16384 + list.removeAt(0) * 32768
     }
 })
